@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste Chicago — v01</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 120px 24px 100px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 440px;
+      margin: 0 auto 40px;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 36px;
+      border: 1.5px solid #111;
+      background: #111;
+      color: #fff;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      cursor: pointer;
+    }
+
+    .cta:hover {
+      background: #fff;
+      color: #111;
+    }
+
+    /* Highlights */
+    .highlights {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .highlights h2 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      margin-bottom: 48px;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .highlight-card {
+      text-align: center;
+    }
+
+    .highlight-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .highlight-card p {
+      font-size: 0.92rem;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #ddd;
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Taste Chicago</h1>
+    <p>Discover the city one neighborhood, one bite at a time.</p>
+    <a href="#highlights" class="cta">Explore the Flavors</a>
+  </section>
+
+  <section class="highlights" id="highlights">
+    <h2>Three Icons, One City</h2>
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <h3>The Deep-Dish</h3>
+        <p>A molten, layered ritual born on the South Side — cheese first, sauce on top, patience required.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>The Italian Beef</h3>
+        <p>Thin-sliced, slow-simmered, and dipped until the bread barely holds. Order it wet, no regrets.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>The Chicago Dog</h3>
+        <p>Mustard, onions, relish, tomato, pickle, sport peppers, celery salt — never ketchup.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Taste Chicago &mdash; A design exploration
+  </footer>
+
+</body>
+</html>
