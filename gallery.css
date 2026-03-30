@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  background: #f5f4f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.gallery-header {
+  text-align: center;
+  padding: 72px 24px 56px;
+}
+
+.gallery-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.gallery-header .subtitle {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.gallery-header .meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999;
+}
+
+.gallery-header .meta .divider {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+/* Grid */
+.gallery-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
+  flex: 1;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Preview — mini visual representation of each version */
+.card-preview {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-preview .preview-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* v01: black & white, serif */
+.card-preview.v01 {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #111;
+}
+
+/* v02: dark hero, sans-serif, structured */
+.card-preview.v02 {
+  background: #111;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* Card Info */
+.card-info {
+  padding: 20px 24px 24px;
+}
+
+.card-info h2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.card-info p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Footer */
+.gallery-footer {
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 0.78rem;
+  color: #aaa;
+  border-top: 1px solid #e5e4e0;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .gallery-header {
+    padding: 48px 20px 40px;
+  }
+
+  .gallery-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    padding: 0 16px 60px;
+  }
+}
